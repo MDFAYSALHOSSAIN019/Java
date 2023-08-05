@@ -2,6 +2,7 @@
 package array_basic;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 
 public class Array_Basic {
@@ -36,34 +37,39 @@ public class Array_Basic {
 //        for(int newName:myArray){
 //            System.out.println(newName);
 //        }
-System.out.println("enter array ");
-int[] name=new int[10];
-        System.out.println("enter your array number");
-//int name[]={52,62,50,92,85,589,2};
-int   max=0;
-int   min=99999999;
-int   total=0;
 
-for (int i=0; i<name.length; i++){
-    name[i]=(int)(Math.random()*100);
-    total +=name[i];
-    if(max<name[i]){max=name[i];}
-    if(min>name[i]){min=name[i];}
-    }
-//for(int number = name[]){
-//max= number > max ? number : max;
-//}
-System.out.println(Arrays.toString(name));
-        System.out.println("Max   number is   "+max);
-        System.out.println("Min   number is   "+min);
-        System.out.println("Total number is   "+total);
+        Scanner sc =new Scanner (System.in);
+        System.out.println("Enter array row number");
+        int row= sc.nextInt();
+        System.out.println("Enter array col number");
+        int col= sc.nextInt();
+
+
+         int[][] name=new int[row][col];
+
+        int   max=0;
+        int   min=99999999;
+        int   total=0;
+        for (int i = 0; i < name.length; i++) {
+            for (int j = 0; j < name[i].length; j++) {
+                name[i][j]=(int)(Math.random()*100);
+                total += name[i][j];
+                if(max<name[i][j]){max=name[i][j];}
+                if(min>name[i][j]){min=name[i][j];}
+            }
+             System.out.println(Arrays.deepToString(name));
+             System.out.println("Total number is   "+total);
+             System.out.println("max number is   "+max);
+             System.out.println("min number is   "+min);
+             System.out.println("\n");
+        }
+                System.out.println(Arrays.deepToString(name));
+                System.out.println("Total number is   "+total);
+               
         
 
 
-//for(int number :name){   
-//        name[number]=(int)(Math.random()*100);
-//     System.out.print(number);
-//}
+
 
     }
     
