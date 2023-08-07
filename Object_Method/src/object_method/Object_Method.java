@@ -10,7 +10,7 @@ public class Object_Method {
 
    
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
+          Scanner sc = new Scanner(System.in);
 //        Object_Method oop=new Object_Method();
 Circle oop=new Circle();
 
