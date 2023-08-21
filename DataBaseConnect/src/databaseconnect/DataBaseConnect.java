@@ -17,7 +17,7 @@ public class DataBaseConnect {
         try {
             String url="jdbc:mysql://localhost:3306/hr";
             String username="root";
-            String password="01930036288#MySQL";
+            String password="01930036288";
             
           connection =DriverManager.getConnection(url, username, password);
           
