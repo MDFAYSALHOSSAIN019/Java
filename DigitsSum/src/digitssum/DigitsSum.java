@@ -1,4 +1,4 @@
-
+                                                                                                                                                                                           
 package digitssum;
 
 import java.util.Scanner;
